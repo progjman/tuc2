@@ -26,7 +26,7 @@ func ShowRegisterForm(w http.ResponseWriter, r *http.Request) {
 	tmplPath := filepath.Join("templates", "register_form.html")
 	tmpl, err := template.ParseFiles(tmplPath)
 	if err != nil {
-		http.Error(w, "Ошибка загрузки формы регистрации", http.StatusInternalServerError)
+		http.Error(w, "Ошибка загрузки формы регистрации!", http.StatusInternalServerError)
 		return
 	}
 
