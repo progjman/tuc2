@@ -4,29 +4,6 @@
 
 Go + HTMX
 
-tuc2 htmx
-
-/tuc
-├── handlers/             # HTTP-обработчики
-│   ├── register.go       # Регистрация IndexHandler() RegisterHandler()
-│   ├── login.go          # Авторизация LoginHandler()
-│   ├── account.go        # Личный кабинет AccountHandler()
-│   ├── htmx.go           # HTMX-фрагменты (формы) ShowLoginForm() ShowRegisterForm()
-│
-├── db/                  # Работа с БД
-│   └── users.go         # Методы работы с пользователями AddUser() GetUserByEmail()
-│
-├── models/              # Структуры данных
-│   └── user.go          # User и PageData
-│
-├── templates/           # HTML-шаблоны
-│   ├── index.html       # Главная страница (форма входа/регистрации)
-│   ├── login_form.html  # Форма входа (HTMX)
-│   ├── register_form.html # Форма регистрации (HTMX)
-│   └── dashboard.html   # Кабинет
-│
-├── main.go              # Точка входа, маршруты
-
 Пакет handlers
 
 register.go — всё, что связано с регистрацией
