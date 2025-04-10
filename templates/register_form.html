@@ -1,0 +1,15 @@
+<form action="/register" method="POST">
+  <h2>Регистрация</h2>
+  <label for="username">Никнейм</label>
+  <input type="text" name="username" id="username" required placeholder="Введите ваш никнейм" />
+
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required placeholder="Введите ваш email" />
+
+  <label for="password">Пароль</label>
+  <input type="password" name="password" id="password" required placeholder="Введите пароль" />
+
+  <button type="submit">Зарегистрироваться</button>
+</form>
+
+<p>Уже есть аккаунт? <a href="#" hx-get="/htmx/login-form" hx-target="#form-container" hx-swap="innerHTML">Войти</a></p>

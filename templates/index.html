@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="dark.css" />
+  <script src="https://unpkg.com/htmx.org@1.7.0"></script> <!-- Подключение HTMX -->
+</head>
+
+<body>
+  <!-- Переключатель темы -->
+  <input type="checkbox" id="toggle-theme" />
+     <label for="toggle-theme" class="theme-switcher">
+    <div class="switch"></div>
+      </label>
+
+  <main>
+    <h1>Добро пожаловать! bro</h1>
+
+    <!-- Кнопки для входа и регистрации -->
+    <div>
+      <button hx-get="/htmx/register-form" hx-target="#form-container" hx-swap="innerHTML">Зарегистрироваться</button>
+      <button hx-get="/htmx/login-form" hx-target="#form-container" hx-swap="innerHTML">Войти</button>
+    </div>
+
+    <!-- Контейнер для подгружаемых форм -->
+    <div id="form-container"></div>
+  </main>
+</body>
+
+</html>
